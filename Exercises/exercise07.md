@@ -20,12 +20,6 @@
 1. Download exported template and make yourself familiar with the code.<br/>
    ![Download Template](img/azure-template-download.png)
 
-1. **Discussion points:**
-   * Describe basic concepts of Azure Resource Manager and ARM templates
-   * Speak about structure of ARM templates (e.g. parameters, variables, resources, etc.)
-   * Point out the use of [template functions](https://azure.microsoft.com/en-us/documentation/articles/resource-group-template-functions/)
-   * Code walk-through for generated PowerShell scripts
-
 
 ## Edit and Deploy Using PowerShell
 
@@ -54,11 +48,6 @@ If you are very familiar with PowerShell, you can do the following steps using t
 
 1. Take a look at the UI for the Quickstart Templates [in the Azure Portal](https://azure.microsoft.com/en-us/documentation/templates/). Again, look for the *Deploy an Ubuntu VM with Docker Engine* template ([link](https://azure.microsoft.com/en-us/documentation/templates/docker-simple-on-ubuntu/)). 
 
-1. **Discussion points:**
-   * Why are the Quickstart Templates so useful?
-   * Describe different ways of deploying them (PowerShell, using the embedded *Deploy to Azure* button)
-   * How does the *Deploy to Azure* mechanism work?
-
 1. In the next example, we are going to need a [Docker](https://www.docker.com/) host. Use the button *Deploy to Azure* in the [Quickstart Template](https://github.com/Azure/azure-quickstart-templates/tree/master/docker-simple-on-ubuntu) to deploy a Docker host in your Azure subscription.<br/>
    ![Deploy to Azure](img/deploy-to-azure.png)
 
@@ -69,11 +58,3 @@ If you are very familiar with PowerShell, you can do the following steps using t
    ![Deployment successful](img/deployment-successful.png)
 
    
-## Further Ideas
-
-If you have time left, you could additionally cover topics like:
-
-* Demonstrate ARM template support in Visual Studio
-* Create and deploy ARM template from scratch using Visual Studio project
-* Deploy ARM template using a PowerShell script
-* Deploy a more complex template from Azure Quickstarts
