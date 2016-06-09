@@ -12,9 +12,6 @@
 
 ## Create Visual Studio Team Services Project
 
-1. **Discussion points:**
-   * Brief overview about Visual Studio Team Services (high-level features, relation to TFS, pricing models, etc.)
-
 1. Navigate to [Visual Studio Team Services](https://www.visualstudio.com) (VSTS) and create a new subscription if you do not already have one.
 
 1. Navigate to your VSTS subscription. In my case the URL is `https://rainerdemotfs-westeu.visualstudio.com/`. Replace this URL with your personal VSTS URL.
@@ -39,10 +36,6 @@
 
 1. Copy the `.gitignore` file from [Exercise-6-VSTS-Source-Control](Assets/Exercise-6-VSTS-Source-Control/.gitignore) into the new local directory.
 
-1. **Discussion points:**
-   * Overview about functionality of Visual Studio's *Team Explorer*
-   * Point out that VSTS works with any Git client (e.g. demo git CLI or Git Extensions)
-
 1. In Visual Studio's *Team Explorer*, goto *Changes*, review the changes that Visual Studio has detected (see image below), and commit your changes.<br/>
    ![Commit Changes](img/commit-changs.png)
 
@@ -56,12 +49,6 @@
    ![Setup Build](img/vsts-setup-build.png)
 
 1. Accept the suggestions of the Build Setup Wizard.
-
-1. **Discussion points:**
-   * Speak about how branches, build processes and deployment slots can be used for dev/test/prod
-   * Build process walk-through
-   * Overview about additional build steps that would be possible
-   * Describe concept of cross-platform build agents
 
 1. Add the following arguments to MSBuild in step *Visual Studio Build* (necessary for creating the Web Deploy package): `/p:DeployOnBuild=true /p:WebPublishMethod=Package /p:PackageAsSingleFile=true /p:SkipInvalidConfigurations=true /p:PackageLocation="$(build.stagingDirectory)"`<br/>
    ![MSBuild Arguments](img/vsts-msbuild-arguments.png)
@@ -89,17 +76,9 @@
 
 1. Select *Certificate Based* and follow the link *download publish settings file*. Open the publish settings file and copy the required data into VSTS.
 
-1. **Discussion points:**
-   * Point out security-related issues with handling publish settings files (again)
-
 1. In build results, follow the link to create a release.<br/>
    ![Create release](img/vsts-setup-release.png)
-
-1. **Discussion points:**
-   * Describe concepts of VSTS's release management
-   * Release process walk-through
-   * Overview about additional steps that would be possible
-   
+  
 1. Setup deployment to Azure Web App.<br/>
    ![Azure Web App Deployment](img/vsts-azure-web-app-deployment.png)
 
@@ -147,55 +126,8 @@
 1. Watch load test running in the cloud. Analyze load test results in Visual Studio and in Visual Studio Online (*web report*). Test test will probably fail.<br/>
    ![Failing load test](img/failing-load-test.png)
 
-1. **Discussion points:**
-   * Discuss the consequences of this result (our app has a scalability problem)
-   * Use Application Insights (see also [exercise 4](exercise04.md)) to detect the source of the problem (requests to Blob Storage start to fail after a certain period of time).
-   * How could we gather more detailed exception information?<br/>
-     Add OWIN unhandled exception handler that logs to Application Insights.<br/>
-     ![Detailed exception message in AI](img/detailed-exception-message.png)<br/>
-     Here is the necessary code (only recommended in a rather dev-oriented audience):
-     ```
-        namespace Books
-        {
-            public class Startup
-            {
-                private class AiExceptionLogger : ExceptionLogger
-                {
-                    public override void Log(ExceptionLoggerContext context)
-                    {
-                        if (context != null && context.Exception != null)
-                        {
-                            var ai = new TelemetryClient();
-                            ai.TrackException(context.Exception);
-                        }
-
-                        base.Log(context);
-                    }
-                }
-
-                public void Configuration(IAppBuilder app)
-                {
-                    // Configure and add Web API
-                    var configuration = new HttpConfiguration();
-                    ...
-                    configuration.Services.Add(typeof(IExceptionLogger), new AiExceptionLogger());
-                    app.UseWebApi(configuration);
-                } 
-                ...
-            }
-        }
-     ```
-
 1. In the web test's request properties, set *think time* to five seconds.<br/>
    ![Set think time](img/change-think-time.png)
 
 1. Re-run load test. Now it should succeed.<br/>
    ![Run load test](img/run-load-test.png)
-
-
-## Further Ideas
-
-If you have time left, you could additionally cover topics like:
-
-* Setup an additional build agent in a VM
-
