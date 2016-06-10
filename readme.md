@@ -20,7 +20,7 @@ For this training I will use a custom powerpoint slidedeck which will be shared 
 
 You will need your own laptop to do the hands-on labs. Ideally, you have the latest version of Visual Studio installed and you have access to your own Microsoft Azure subscription.
 
-* Visual Studio 2015 Enterprise (Update 2) - trial availabel via [https://www.visualstudio.com/en-us/downloads/download-visual-studio-vs.aspx]
+* Visual Studio 2015 Enterprise (Update 2) - trial available via [https://www.visualstudio.com/en-us/downloads/download-visual-studio-vs.aspx]
 * Node.js with NPM - download via [https://nodejs.org/en/]
 * Git for Windows - download via [https://git-scm.com/downloads]
 * Azure SDK for VS 2015 - download via [https://azure.microsoft.com/en-us/downloads/]
