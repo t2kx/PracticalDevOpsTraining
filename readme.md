@@ -6,7 +6,7 @@ The original GitHub repository and its content has been created for the training
 
 The specific training materials for this workshop have been created by Rainer Stropek. This adapted version for the training delivery in Belgium is a fork based on [https://github.com/rstropek/PracticalDevOpsTraining].
 
-Note that this training is a practical (Microsoft) DevOps training and will guide attendees how to make use of DevOps principles in the full software development application lifecycle. Don't expect to learn the ins and outs of a new language/framework, but be ready to absorb the the culture that emphasizes the collaboration and communication of both software developers and information-technology (IT) professionals while automating the process of software delivery and infrastructure changes.
+Note that this training is a practical (Microsoft) DevOps training and will guide attendees how to make use of DevOps principles in the full software development application lifecycle. Don't expect to learn the ins and outs of a new language/framework, but be ready to absorb the culture that emphasizes the collaboration and communication of both software developers and information-technology (IT) professionals while automating the process of software delivery and infrastructure changes.
 
 ## Slides and Exercises
 
