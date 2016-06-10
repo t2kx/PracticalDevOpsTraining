@@ -16,11 +16,25 @@ For this training I will use a custom powerpoint slidedeck which will be shared 
 
 **You find the exercises of the training in the [Exercises](Exercises) folder.**
 
+### Prerequisites
+
+You will need your own laptop to do the hands-on labs. Ideally, you have the latest version of Visual Studio installed and you have access to your own Microsoft Azure subscription.
+
+* Visual Studio 2015 Enterprise (Update 2) - trial availabel via [https://www.visualstudio.com/en-us/downloads/download-visual-studio-vs.aspx]
+* Node.js with NPM - download via [https://nodejs.org/en/]
+* Git for Windows - download via [https://git-scm.com/downloads]
+* Azure SDK for VS 2015 - download via [https://azure.microsoft.com/en-us/downloads/]
+* Azure PowerShell - download via [http://aka.ms/webpi-azps/]
+* PuTTY - download via [http://www.putty.org/]
+* ASP.NET CDore 1.0 RC2 [https://www.microsoft.com/net/core#windows]
+* Optional: VS 2015 Tools for Docker (Preview) - download via [https://visualstudiogallery.msdn.microsoft.com/0f5b2caa-ea00-41c8-b8a2-058c7da0b3e4]
+* Optional: Docker Toolbox - download via [https://www.docker.com/products/docker-toolbox]
+
+Attendees will be working together in groups of 3 people for the exercises. A shared Visual Studio Team Services account will be used with a dedicated Team Project for each team. Instructions will be given during the course. 
+
 ## Training Content
 
 Agile Software Engineering with Visual Studio (Team Services), Microsoft Azure & Open Source tools
-
-### Introduction
 
 Software engineering practices have changed drastically in the last few years. Agile practices, DevOps, Cloud Computing, Open Source and similar developments have proven their effectiveness. Microsoft’s platforms for software development and cloud computing have also embraced these concepts and are at the leading edge in their domain.
 
@@ -42,20 +56,4 @@ In this **two-day training** you will learn how software development works with 
 The training is a combination of approx. 60% presentations with embedded demos and 40% hands-on time where you have your fingers on the keyboard and try what you have learned. Those who are new to the topics can follow a provided hands-on lab guide step by step. In areas you are already familiar with, you can put the guides to the side and create an individual sample with the latest tools and technologies.
 
 Attendees should already have basic knowledge about Visual Studio, .NET, C#, HTML and JavaScript. Detailed knowledge about the latest versions of these tools, frameworks and languages is not required.
- 
-### Prerequisites
-
-You will need your own laptop to do the hands-on labs. Ideally, you have the latest version of Visual Studio installed and you have access to your own Microsoft Azure subscription.
-
-* Visual Studio 2015 Enterprise (Update 2) - trial availabel via [https://www.visualstudio.com/en-us/downloads/download-visual-studio-vs.aspx]
-* Node.js with NPM - download via [https://nodejs.org/en/]
-* Git for Windows - download via [https://git-scm.com/downloads]
-* Azure SDK for VS 2015 - download via [https://azure.microsoft.com/en-us/downloads/]
-* Azure PowerShell - download via [http://aka.ms/webpi-azps/]
-* PuTTY - download via [http://www.putty.org/]
-* ASP.NET CDore 1.0 RC2 [https://www.microsoft.com/net/core#windows]
-* Optional: VS 2015 Tools for Docker (Preview) - download via [https://visualstudiogallery.msdn.microsoft.com/0f5b2caa-ea00-41c8-b8a2-058c7da0b3e4]
-* Optional: Docker Toolbox - download via [https://www.docker.com/products/docker-toolbox]
-
-Attendees will be working together in groups of 3 people for the exercises. A shared Visual Studio Team Services account will be used with a dedicated Team Project for each team. Instructions will be given during the course. 
 
