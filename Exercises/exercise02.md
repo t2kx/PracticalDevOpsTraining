@@ -35,6 +35,8 @@
 
 ## Create Shared Access Signature
 
+1. [Optional] Learn more about Shared Access Signatures (https://azure.microsoft.com/en-us/documentation/articles/storage-dotnet-shared-access-signature-part-1/)
+
 1. Open PowerShell with *Azure PowerShell* installed.
 
 1. Use the following script to create a *Shared Access Signature* (SAS) for the uploaded blob (note that you have to replace `<yourname>` accordingly). If you want, experiment with the Azure PowerShell commands.
