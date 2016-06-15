@@ -3,47 +3,11 @@
 
 ## Learnings
 
-1. Basics about Visual Studio Team Services
-1. Committing code to VSTS using Git and Visual Studio
-1. Setting up automated build
+1. Setting up automated build in VSTS
 1. Connecting VSTS and Azure
 1. Setting up VSTS Release Management 
 
-
-## Create Visual Studio Team Services Project
-
-1. Navigate to [Visual Studio Team Services](https://www.visualstudio.com) (VSTS) and create a new subscription if you do not already have one.
-
-1. Navigate to your VSTS subscription. In my case the URL is `https://rainerdemotfs-westeu.visualstudio.com/`. Replace this URL with your personal VSTS URL.
-
-1. Create a new VSTS project `PracticalDevOps`. Make sure you select *Git* for Version control.<br/>
-   ![New VSTS project](img/vsts-new-project.png)
- 
-1. Navigate to your new project.
-
-
-## Commit Code to Visual Studio Team Services
-
-1. In Visual Studio's *Team Explorer*, select *Connect to Team Project*.<br/>
-   ![Connect to Team Project](img/visual-studio-connect-project.png)
-
-1. Add your VSTS server and select the `PracticalDevOps` project.
-
-1. Clone the project to a **new local directory**.<br/>
-   ![Clone project](img/clone-project.png)
-
-1. Copy the code your created in the previous exercises into the new local directory.
-
-1. Copy the `.gitignore` file from [Exercise-6-VSTS-Source-Control](Assets/Exercise-6-VSTS-Source-Control/.gitignore) into the new local directory.
-
-1. In Visual Studio's *Team Explorer*, goto *Changes*, review the changes that Visual Studio has detected (see image below), and commit your changes.<br/>
-   ![Commit Changes](img/commit-changs.png)
-
-1. Take a look at the committed code in the VSTS portal.<br/>
-   ![Code in Portal](img/code-in-vsts.png)
-   
-
-## Setup Build
+## Setup Automated Build in VSTS
 
 1. Click on *build setup now* in VSTS.<br/>
    ![Setup Build](img/vsts-setup-build.png)
