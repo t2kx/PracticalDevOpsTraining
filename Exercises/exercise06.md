@@ -6,6 +6,7 @@
 1. Setting up automated build in VSTS
 1. Connecting VSTS and Azure
 1. Setting up VSTS Release Management 
+1. Run Load Test in VSTS
 
 ## Setup Automated Build in VSTS
 
