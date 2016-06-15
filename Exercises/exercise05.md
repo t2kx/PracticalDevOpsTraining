@@ -26,6 +26,8 @@
 
 ## Publish From Visual Studio
 
+[Only for this exercise/demo it's recommended to Publish from Visual Studio. Please always rely on an automated build & release system to build, package and deploy your application to a target environment]
+
 1. Start *Publish* wizard in Visual Studio.<br/>
    ![Publish Wizard](img/visual-studio-publish.png)
 
