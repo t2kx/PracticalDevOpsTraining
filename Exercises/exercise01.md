@@ -6,6 +6,7 @@
 1. How to create a RESTful Web API project with OWIN from scratch
 1. Understand the importance of NuGet (will become even more important with .NET Core)
 1. Learn very basics about ASP.NET Web API development (this will not be a deep dive as we focus on DevOps, not just Dev) 
+1. Commit solution to a git repository in VSTS
 
 
 ## Creating Project in Visual Studio
@@ -76,4 +77,22 @@
 1. *Postman* is a very handy tool for testing Web APIs. You can get it here: [Postman on Chrome Web Store](https://chrome.google.com/webstore/detail/postman/fhbjgbiflinjbdggehcddcbncdddomop). Install *Postman* and try the Web API.<br/>
    ![Postman](img/postman.png)
    
-   
+## Commit Code to Visual Studio Team Services
+
+1. In Visual Studio's *Team Explorer*, select *Connect to Team Project*.<br/>
+   ![Connect to Team Project](img/visual-studio-connect-project.png)
+
+1. Add the "PracticalDevOps" VSTS server and select your team's Team Project.
+
+1. Clone the project to a **new local directory**.<br/>
+   ![Clone project](img/clone-project.png)
+
+1. Copy the code your created in the previous exercises into the new local directory.
+
+1. Copy the `.gitignore` file from [Exercise-6-VSTS-Source-Control](Assets/Exercise-6-VSTS-Source-Control/.gitignore) into the new local directory.
+
+1. In Visual Studio's *Team Explorer*, goto *Changes*, review the changes that Visual Studio has detected (see image below), and commit your changes.<br/>
+   ![Commit Changes](img/commit-changs.png)
+
+1. Take a look at the committed code in the VSTS portal.<br/>
+   ![Code in Portal](img/code-in-vsts.png)
