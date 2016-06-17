@@ -83,4 +83,7 @@
 1. Find out how to push Trace events also to Application Insights 
 
 1. Implement some Trace statements in the code and verify the results in Application Insights
-   
+
+1. Learn more about Application Insights (https://azure.microsoft.com/en-us/services/application-insights/)
+
+1. More Telemetry from Application Insights (https://azure.microsoft.com/en-us/documentation/articles/app-insights-asp-net-more/)
