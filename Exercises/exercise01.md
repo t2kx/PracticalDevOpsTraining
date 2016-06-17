@@ -13,6 +13,8 @@
 
 1. [Optional] Learn more about REST and Web API [https://blogs.msdn.microsoft.com/martinkearn/2015/01/05/introduction-to-rest-and-net-web-api/]
 
+1. [Optional] Learn more about OWIN and Katana [http://www.asp.net/aspnet/overview/owin-and-katana/getting-started-with-owin-and-katana]
+
 1. Start Visual Studio
 
 1. Create a new web project. **Disable** Application Insights for now. We will add Application Insights later.<br/> 
