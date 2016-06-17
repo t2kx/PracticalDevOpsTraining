@@ -93,7 +93,7 @@
 
 1. Copy the code your created in the previous exercises into the new local directory.
 
-1. Copy the `.gitignore` file from [Exercise-6-VSTS-Source-Control](Assets/Exercise-1-VSTS-Source-Control/.gitignore) into the new local directory.
+1. Copy the `.gitignore` file from [Exercise-1-VSTS-Source-Control](Assets/Exercise-1-VSTS-Source-Control/.gitignore) into the new local directory.
 
 1. In Visual Studio's *Team Explorer*, goto *Changes*, review the changes that Visual Studio has detected (see image below), and commit your changes.<br/>
    ![Commit Changes](img/commit-changs.png)
