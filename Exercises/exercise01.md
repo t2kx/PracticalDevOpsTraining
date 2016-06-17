@@ -88,12 +88,12 @@
 
 1. Add the "PracticalDevOps" VSTS server and select your team's Team Project.
 
-1. Clone the project to a **new local directory**.<br/>
+1. Clone the project to a **new local directory** and remember the local folder to copy over the already created books solution (next step).<br/>
    ![Clone project](img/clone-project.png)
 
 1. Copy the code your created in the previous exercises into the new local directory.
 
-1. Copy the `.gitignore` file from [Exercise-6-VSTS-Source-Control](Assets/Exercise-6-VSTS-Source-Control/.gitignore) into the new local directory.
+1. Copy the `.gitignore` file from [Exercise-6-VSTS-Source-Control](Assets/Exercise-1-VSTS-Source-Control/.gitignore) into the new local directory.
 
 1. In Visual Studio's *Team Explorer*, goto *Changes*, review the changes that Visual Studio has detected (see image below), and commit your changes.<br/>
    ![Commit Changes](img/commit-changs.png)
