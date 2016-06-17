@@ -34,6 +34,10 @@
 
 ## Add and Run Tests
 
+1. **Microsoft Fakes** help you isolate the code you are testing by replacing other parts of the application with stubs or shims. These are small pieces of code that are under the control of your tests. By isolating your code for testing, you know that if the test fails, the cause is there and not somewhere else. Stubs and shims also let you test your code even if other parts of your application are not working yet.
+
+1. [Optional] Learn more about Microsoft Fakes (https://msdn.microsoft.com/en-us/library/hh549175.aspx)
+
 1. Add *Fakes* assembly for `Books` reference:<br/>
    ![Add Fakes](img/add-fakes-assembly.png)
    
