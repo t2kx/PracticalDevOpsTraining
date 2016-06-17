@@ -12,9 +12,9 @@
 
 1. Open [Azure Portal](https://portal.azure.com) and sign in.
 
-1. Create a new *Resource group* named `PracticalDevOps-Dev`
+1. Create a new *Resource group* named `PracticalDevOps-Dev` with resource group location `West-Europe`
 
-1. Add a *Storage account* named `books<yourname>dev` (replace `<yourname>` with your name to get a globally unique storage account name).<br/>
+1. Add a *Storage account* named `books<yourname>dev` (replace `<yourname>` with your name to get a globally unique storage account name) and reuse the already created Resource Group `PracticalDevOps-Dev`.<br/>
    ![Dev Storage Account](img/dev-storage-account.png)
 
 1. In Visual Studio, add your Azure account to your profile.<br/>
@@ -23,9 +23,10 @@
 1. Use *Cloud Explorer* in Visual Studio to connect to your storage account.<br/>
    ![Cloud Explorer](img/visual-studio-cloud-explorer.png)
 
-1. Use *Cloud Explorer* to create a new Blob Container named `booknametokens`.
+1. Use *Cloud Explorer* to create a new Blob Container named `booknametokens`. Right-click the "Blob Containers" element and `Create Blob Container`.
 
 1. Upload [BookNameTokens.txt](Assets/Exercise-2-Book-Name-Tokens/BookNameTokens.txt) into the new container.
+   ![Upload Blog](img/uploadBlobFromVS.png)
 
 1. Copy blob URL using *Cloud Explorer*.<br/>
    ![Copy Blob URL](img/copy-blob-url.png)
@@ -37,7 +38,7 @@
 
 1. [Optional] Learn more about Shared Access Signatures (https://azure.microsoft.com/en-us/documentation/articles/storage-dotnet-shared-access-signature-part-1/)
 
-1. Open PowerShell with *Azure PowerShell* installed.
+1. Open PowerShell ISE with *Azure PowerShell* installed.
 
 1. Use the following script to create a *Shared Access Signature* (SAS) for the uploaded blob (note that you have to replace `<yourname>` accordingly). If you want, experiment with the Azure PowerShell commands.
     ```
@@ -51,11 +52,11 @@
     Login-AzureRmAccount
 
     # Optionally: If you have mulitple subscriptions, select the one you want to use
-    # Get-AzureRmSubscription
-    # Select-AzureRmSubscription -SubscriptionId ...
+    # Get-AzureRmSubscription -SubscriptionId ''
+    # Select-AzureRmSubscription -SubscriptionId ''
 
     $accountKeys = Get-AzureRmStorageAccountKey -ResourceGroupName $resourceGroupName -Name $storageAccountName
-    $storageContext = New-AzureStorageContext -StorageAccountName $storageAccountName -StorageAccountKey $accountKeys.Key1
+    $storageContext = New-AzureStorageContext -StorageAccountName $storageAccountName -StorageAccountKey $accountKeys[0].Value
 
     $container = Get-AzureStorageContainer -Context $storageContext -Name $containerName
     $cbc = $container.CloudBlobContainer
@@ -97,7 +98,7 @@
     </configuration>
    ```
 
-1. Search for the following line in `Services/NameGenerator.cs`: `var bookNameTokens = await Task.FromResult(bookNameTokensDummy);`. Describe that we have to replace the static book name tokens with a call to Blob Storage.
+1. Search for the following line in `Services/NameGenerator.cs`: `var bookNameTokens = await Task.FromResult(bookNameTokensDummy);`. Notice the static/dummy approach to get the bookname tokens at this moment. We want to get the bookname tokens from the Blob Storage.
 
 1. Replace `Services/NameGenerator.cs` with the implementation from [Exercise-2-Service-Implementation](Assets/Exercise-2-Service-Implementation/NameGenerator.cs).
 
