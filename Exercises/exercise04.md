@@ -77,4 +77,10 @@
 
 1. Open *Application Insights Search* in Visual Studio while debugging your application. Refresh `http://localhost:2690/api/books` multiple times. See if your application telemetry appears.<br/>
    ![Application Insights Search](img/visual-studio-application-insights.png)
+
+## Extra
+
+1. Find out how to push Trace events also to Application Insights 
+
+1. Implement some Trace statements in the code and verify the results in Application Insights
    
