@@ -4,7 +4,7 @@
 
 The original GitHub repository and its content has been created for the training "Practical DevOps". Its content is described below. All scheduled trainings take place all over Western Europe in spring 2016. Note that the content of the repository will not be kept up to date after all the trainings took place.
 
-The specific training materials for this workshop have been created by Rainer Stropek. This adapted version for the training delivery in Belgium is a fork based on [https://github.com/rstropek/PracticalDevOpsTraining].
+The specific training materials for this workshop have been created by Rainer Stropek on request by Microsoft. This adapted version for the training delivery in Belgium is a fork based on [https://github.com/rstropek/PracticalDevOpsTraining].
 
 Note that this training is a practical (Microsoft) DevOps training and will guide attendees how to make use of DevOps principles in the full software development application lifecycle. Don't expect to learn the ins and outs of a new language/framework, but be ready to absorb the culture that emphasizes the collaboration and communication of both software developers and information-technology (IT) professionals while automating the process of software delivery and infrastructure changes.
 
@@ -14,11 +14,11 @@ For this training I will use a custom powerpoint slidedeck which will be shared 
 
 **Note that you can view the original slides online at [http://rstropek.github.io/PracticalDevOpsTraining/](http://rstropek.github.io/PracticalDevOpsTraining/)**.
 
-**You find the exercises of the training in the [Exercises](Exercises) folder.**
+**You can find the exercises of the training in the [Exercises](Exercises) folder.**
 
 ### Prerequisites
 
-You will need your own laptop to do the hands-on labs. Ideally, you have the latest version of Visual Studio installed and you have access to your own Microsoft Azure subscription.
+You will need your own laptop to do the hands-on labs. Ideally, you have the latest version of Visual Studio installed and you have access to your own Microsoft Azure subscription. In case you don't have a valid Azure Subscription, we will try to provide some free temporary Azure passes.
 
 * Visual Studio 2015 Enterprise (Update 2) - trial available via [https://www.visualstudio.com/en-us/downloads/download-visual-studio-vs.aspx]
 * Node.js with NPM - download via [https://nodejs.org/en/]
