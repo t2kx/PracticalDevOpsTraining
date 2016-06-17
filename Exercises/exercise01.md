@@ -11,6 +11,8 @@
 
 ## Creating Project in Visual Studio
 
+1. [Optional] Learn more about REST and Web API [https://blogs.msdn.microsoft.com/martinkearn/2015/01/05/introduction-to-rest-and-net-web-api/]
+
 1. Start Visual Studio
 
 1. Create a new web project. **Disable** Application Insights for now. We will add Application Insights later.<br/> 
