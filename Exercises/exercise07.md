@@ -9,8 +9,11 @@
 1. Editing and deploying ARM Templates in the Azure Portal
 1. Deploying a VM using an Azure ARM Quickstart
 
+## Introduction
 
-## Export Template
+The infrastructure for your application is typically made up of **many components** – maybe a *virtual machine*, *storage account*, and *virtual network*, or a *web app*, *database*, *database server*, and 3rd party services. You do not see these components as separate entities, instead you see them as related and interdependent parts of a single entity. You want to **deploy, manage, and monitor them as a group**. Azure Resource Manager (ARM) enables you to work with the resources in your solution as a group. You can deploy, update or delete all of the resources for your solution in a single, coordinated operation. You use a template for deployment and that template can work for different environments such as testing, staging and production. Resource Manager provides security, auditing, and tagging features to help you manage your resources after deployment.
+
+## Export ARM Template
 
 1. Open [Azure Portal](https://portal.azure.com) and sign in.
 
