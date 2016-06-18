@@ -10,6 +10,8 @@
 
 ## Setup Automated Build in VSTS
 
+1. Go to the Code tab for your Team Project in VSTS
+
 1. Click on *build setup now* in VSTS.<br/>
    ![Setup Build](img/vsts-setup-build.png)
 
@@ -60,9 +62,6 @@
 
 
 ## Run Load Test in VSTS
-
-1. **Discussion points:**
-   * Describe advantages of load testing in the cloud
 
 1. Right-click on solution and add new *Test Settings* named *Cloud*.<br/>
    ![Add new test settings](img/add-cloud-test-settings.png)
