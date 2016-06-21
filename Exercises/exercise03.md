@@ -26,6 +26,8 @@
    * `System.ComponentModel.Composition.Registration`
    * `System.Reflection.Context`
 
+1. Add a reference to the Books project.
+
 1. Install necessary NuGet packages by running the following commands in Visual Studio's *Package Manager Console* (you can use *Manage NuGet Packages for Solution* instead if you prefer GUI over PowerShell):
    * `Install-Package Microsoft.AspNet.WebApi.Owin -Project Books.Test`
    * `Install-Package Microsoft.Owin.Host.SystemWeb -Project Books.Test`
